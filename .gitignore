@@ -1,0 +1,13 @@
+# Dependencies (none for this project, but good habit)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Env files (never commit secrets!)
+.env

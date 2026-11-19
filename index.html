@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     PROJECT 1: PERSONAL PORTFOLIO SITE
+     File: index.html — The STRUCTURE of the page
+     Think of HTML as the skeleton: it defines WHAT is on the page.
+     CSS (style.css) will make it pretty, JS (script.js) makes it interactive.
+     ============================================================ -->
+<html lang="en">
+<head>
+  <!-- META TAGS: Information for the browser & search engines (not visible on page) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a Full-Stack Developer from Durban, South Africa. Building MERN apps, 2 projects a week.">
+  <title>Keaton Pillay | Full-Stack Developer — Durban, ZA</title>
+
+  <!-- Link to our CSS file. This is how HTML knows about styling. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       SECTION 1: NAVBAR
+       Sticky top navigation. Links jump to sections below using #id
+       ============================================================ -->
+  <header class="navbar" id="home">
+    <nav class="nav-container">
+      <!-- Logo / Name on the left -->
+      <a href="#home" class="logo">Keaton<span>Pillay</span></a>
+
+      <!-- Hamburger button: only visible on mobile (controlled by CSS + JS) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Nav links on the right -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#" class="btn btn-small">Download CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         SECTION 2: HERO (Top banner — first impression!)
+         Who you are, what you do, and a call-to-action button.
+         ============================================================ -->
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="hero-greeting">👋 Hi, I'm</p>
+        <h1>Keaton Pillay</h1>
+        <!-- The typing effect in script.js will cycle through these roles -->
+        <h2 class="typing-line">I'm a <span id="typingText">Full-Stack Developer</span><span class="cursor">|</span></h2>
+        <p class="hero-text">
+          Based in Durban, South Africa. I'm building 2 projects a week to become a job-ready
+          Full-Stack Developer (MERN stack). This site is Project #1 — built from scratch with HTML, CSS & JavaScript.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <!-- Social links: replace # with your real URLs -->
+        <div class="socials">
+          <a href="https://github.com/Keatonpillay23" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://linkedin.com/in/keaton-pillay" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:you@example.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: ABOUT
+         Your story in 3-4 sentences. Recruiters read this first.
+         ============================================================ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a Full-Stack Developer in the making, on a mission: <strong>2 projects every week for 12 weeks</strong>.
+              I started with HTML, CSS and JavaScript, and I'm now working towards React, Node.js, Express and MongoDB (MERN).
+            </p>
+            <p>
+              My goal is to land a Software Engineering role in South Africa or remotely.
+              I learn by building — every project on this page is live, on GitHub, and documented.
+            </p>
+            <ul class="about-list">
+              <li>📍 Durban, KwaZulu-Natal, South Africa</li>
+              <li>🎯 Target role: Full-Stack Developer</li>
+              <li>⚡ Currently learning: React + Node.js</li>
+              <li>🚀 This portfolio: Project 1 of 24</li>
+            </ul>
+          </div>
+          <!-- Stats cards: simple, visual proof of progress -->
+          <div class="stats">
+            <div class="stat-card"><strong>24</strong><span>Projects Planned</span></div>
+            <div class="stat-card"><strong>2 / week</strong><span>Build Pace</span></div>
+            <div class="stat-card"><strong>100%</strong><span>Deployed & Documented</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: SKILLS
+         Show what you know + what you're learning. Honest > inflated.
+         ============================================================ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">What I'm learning, in order. Green = building now, Grey = coming soon.</p>
+        <div class="skills-grid">
+          <div class="skill-card learning">
+            <h3>HTML & CSS</h3><p>Semantic HTML, Flexbox, Grid, responsive design</p><span class="badge">Learning Now</span>
+          </div>
+          <div class="skill-card learning">
+            <h3>JavaScript</h3><p>DOM, events, fetch API, ES6+</p><span class="badge">Learning Now</span>
+          </div>
+          <div class="skill-card">
+            <h3>React</h3><p>Components, hooks, state</p><span class="badge">Coming Soon</span>
+          </div>
+          <div class="skill-card">
+            <h3>Node & Express</h3><p>REST APIs, backend logic</p><span class="badge">Coming Soon</span>
+          </div>
+          <div class="skill-card">
+            <h3>MongoDB</h3><p>Databases, Mongoose</p><span class="badge">Coming Soon</span>
+          </div>
+          <div class="skill-card">
+            <h3>Git & GitHub</h3><p>Version control, deployment</p><span class="badge">Learning Now</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: PROJECTS
+         Your GitHub proof. Each card = one repo. Update as you build!
+         ============================================================ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Every project is live, on GitHub, and documented. Newest first.</p>
+        <div class="projects-grid">
+
+          <!-- PROJECT CARD 1: This very site -->
+          <article class="project-card">
+            <div class="project-top"><span class="project-num">#01</span><span class="project-tag">HTML • CSS • JS</span></div>
+            <h3>Personal Portfolio Site</h3>
+            <p>This site! Responsive single-page portfolio with mobile menu, typing effect, and contact form validation.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary">Live Demo</a>
+              <a href="https://github.com/Keatonpillay23/portfolio-project-1" target="_blank" rel="noopener" class="btn btn-small btn-outline">GitHub</a>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 2: Placeholder for next week -->
+          <article class="project-card">
+            <div class="project-top"><span class="project-num">#02</span><span class="project-tag">JavaScript</span></div>
+            <h3>To-Do App v1</h3>
+            <p>Coming this week! Add/edit/delete tasks with localStorage. I'll add the live link here when it's done.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-small btn-outline">GitHub</a>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 3: Placeholder -->
+          <article class="project-card">
+            <div class="project-top"><span class="project-num">#03</span><span class="project-tag">JS + API</span></div>
+            <h3>Weather App</h3>
+            <p>Week 2 project. Search any city and see the forecast. Placeholder for now — watch this space.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary">Live Demo</a>
+              <a href="#" class="btn btn-small btn-outline">GitHub</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: CONTACT
+         Form with JS validation. No backend yet — it validates + shows success.
+         Later (Week 8) you'll connect this to a real backend/email.
+         ============================================================ -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Open to junior Full-Stack roles, internships, and freelance gigs. My inbox is open!</p>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+            <small class="error" id="nameError"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            <small class="error" id="emailError"></small>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Hi! I saw your portfolio..." required></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-success" id="formSuccess" hidden>✅ Thanks! Your message looks good. (Demo form — connect a backend in Week 8 to make it send for real.)</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       SECTION 7: FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Keaton Pillay — Built with HTML, CSS & JavaScript in Durban, ZA 🇿🇦</p>
+      <p class="footer-small">Project 1 of 24 • 2 projects a week • <a href="#home">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <!-- Link to our JS file. Placed at end of body so DOM is ready when it runs. -->
+  <script src="script.js"></script>
+</body>
+</html>
